@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <style>
+        body{
+            padding: 25px;
+            border: 100px;
+            border-color: blue;
+        }
+        h1{
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1><i>ANDHRA UNIVERSITY</i></h1>
+        <h2><b>ADMISSION FORM</b></h2>
+        <p>required fields are followed by a*</p>
+        <h3><b>CONTACT INFO</b></h3>
+        <p>NAME:*<input type="text" name="name" id="name" required\></p>
+        <p>moblie no:* <input type="number" name="moblie no" id="moblie no" required></p>
+        <p>EMAIL:* <input type="email" name="email" id="email" required></p>
+        <fieldset>
+        <legend>GENEDER</legend>
+        <p>MALE: <input type="radio" name="gender" id="gender">
+        FEMALE: <input type="radio" name="gender" id="gender"></p>
+        </fieldset>
+        <p>ZONE:*
+            <select name="zone" id="zone" required>
+                <option value="">--select a zone--</option>
+                <option value="south">SOUTH ZONE</option>
+                <option value="north">NORTH ZONE</option>
+                <option value="west">WEST ZONE</option>
+                <option value="east">EAST ZONE</option>
+            </select>
+        </p>
+        <p>STATE:* <input type="text" name="state" id="state" required></p>
+        <p>ADDRESS: <textarea name="adress" id="" cols="100" rows="20"></textarea></p>
+        <p>STREAM IN UG:*
+            <select name="stream" id="stream" required>
+                <option value="">--select a stream--</option>
+                <option value="sciences">SCIENCES</option>
+                <option value="arts">ARTS</option>
+                <option value="commerce">COMMERCE</option>
+                <option value="hummanities">HUMANITIES</option>
+            </select>
+        </p>
+        <p>enter 10th marks:* <input type="percentage" name="score" id="score" required></p>
+        <p>enter 12th score:* <input type="percentgae" name="score" id="score" required></p>
+        <p>enter ug score:* <input type="percentage" name="score" id="score" required></p>
+        <p>upload 10th certificate* <input type="file" name="10th file" id="10th file" required></p>
+        <p>upload ug certificate*<input type="file" name="ug file" id="ug file" required></p>
+        <legend>CASTE*</legend>
+        <p>OBC: <input type="radio" name="caste" id="obc" >
+            SC ST: <input type="radio" name="caste" id="sc st" >
+            OC: <input type="radio" name="caste" id="oc" ></p>
+        <legend>EWS</legend> 
+        <p>yes: <input type="radio" name="ewws" id="ews">no: <input type="radio" name="ews" id="ews"></p>
+        <p>aadhar no:* <input type="number" name="aadhar" id="aadhar" required></p>
+        <input type="submit" name="submit"> 
+    </form>
+</body>
+</html>
